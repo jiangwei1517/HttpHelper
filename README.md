@@ -1,6 +1,6 @@
 # HttpHelper
 
-![MacDown logo](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492851063981&di=dc00ed232150896a3985afc343fee398&imgtype=jpg&src=http%3A%2F%2Fimg1.imgtn.bdimg.com%2Fit%2Fu%3D3241354342%2C2143105457%26fm%3D214%26gp%3D0.jpg)
+![MacDown logo](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492851216227&di=4699450851adc938ac40a837f97d4b98&imgtype=0&src=http%3A%2F%2Fimg1.3lian.com%2F2015%2Fa2%2F217%2Fd%2F224.jpg)
 
 ## 解决问题
 * 网络请求（http、https）
