@@ -1,0 +1,15 @@
+apply plugin: 'com.android.application'
+apply from:rootProject.file('gradle/build.android.gradle')
+android {
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile project(':httplibrary')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+}
