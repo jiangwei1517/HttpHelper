@@ -34,7 +34,7 @@ public class RetrofitActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                request(HttpHelper.api().getZhihuStoryGet(String.valueOf(9355443)), new Action1<ZhihuStory>() {
+                Subscription subscription = request(HttpHelper.api().getZhihuStoryGet(String.valueOf(9355443)), new Action1<ZhihuStory>() {
                     @Override
                     public void call(ZhihuStory zhihuStory) {
                         Toast.makeText(RetrofitActivity.this, zhihuStory.title, Toast.LENGTH_SHORT)
@@ -46,6 +46,7 @@ public class RetrofitActivity extends AppCompatActivity {
                         Toast.makeText(RetrofitActivity.this, "网络链接异常", Toast.LENGTH_SHORT).show();
                     }
                 });
+                mCompositeSubscription.add(subscription);
             }
         });
     }

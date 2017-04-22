@@ -38,7 +38,6 @@ public class ParamsInterceptor implements Interceptor {
     @Override
     public Response intercept(Chain chain) throws IOException {
         Request request = chain.request();
-//        String path = request.url().url().getPath();
         String requestId = ParamsBuilder.getRequestId();
         HttpUrl.Builder requestBuilder = request.url().newBuilder();
         /*
